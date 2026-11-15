@@ -1,0 +1,7 @@
+@import "./legacy/design-tokens.css";
+@import "./legacy/reset.css";
+@import "./legacy/global.css";
+@import "./legacy/components.css";
+@import "./legacy/layout.css";
+@import "./legacy/responsive.css";
+@import "./legacy/language-toggle.css";

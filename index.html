@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EdTech teaches practical digital skills in English and Luganda.">
+    <title>EdTech - Digital Skills in Local Languages</title>
+    <link rel="stylesheet" href="assets/css/design-tokens.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/pages/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/language-toggle.css">
+</head>
+<body class="landing-page">
+    <div class="dot-floating dot-purple" aria-hidden="true"></div>
+    <div class="dot-floating dot-yellow" aria-hidden="true"></div>
+    <div class="dot-floating dot-cyan" aria-hidden="true"></div>
+
+    <header class="site-header landing-header">
+        <a class="logo" href="index.html" aria-label="EdTech home">EdTech</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+            <a href="pages/public/courses.html">Courses <i class="fas fa-chevron-down nav-icon" aria-hidden="true"></i></a>
+            <a href="pages/public/organisations.html">For Organisations</a>
+            <a href="pages/public/about.html">About Us</a>
+            <a href="#features">Features</a>
+            <a href="pages/public/contact.html">Contact Us</a>
+        </nav>
+        <div class="header-actions">
+            <button class="icon-btn" type="button" aria-label="Search courses" data-search-toggle><i class="fas fa-search" aria-hidden="true"></i></button>
+            <a class="btn btn-secondary" href="pages/auth/login.html">Login</a>
+            <a class="btn btn-primary" href="pages/auth/register.html">Join Us</a>
+        </div>
+        <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language to Luganda" aria-pressed="false"><i class="fas fa-language" aria-hidden="true"></i><span data-language-label>Luganda</span></button>
+</header>
+
+    <main>
+        <section class="landing-hero page-main" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">Digital <span class="text-purple"><svg class="star-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="currentColor"/></svg>Skills</span><br>Made <span class="text-orange">Local</span></h1>
+                <p class="subtitle">Learn practical digital skills through short, engaging lessons in Luganda and English. Build confidence with technology, wherever you are.</p>
+                <div class="language-proof" aria-label="Available in English and Luganda">
+                    <span class="language-dot">EN</span>
+                    <span class="language-dot language-dot-luganda">LG</span>
+                    <span>Learn in English or Luganda</span>
+                </div>
+                <div class="hero-actions cluster">
+                    <a class="btn btn-primary hero-cta" href="pages/public/courses.html">Explore Courses <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a class="text-link" href="#how-it-works">Discover how it works <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+                <div class="how-it-works-container" id="how-it-works">
+                    <div class="how-it-works-text">
+                        <span>How It Works!</span>
+                        <svg class="scribble-arrow" viewBox="0 0 100 30" fill="none" aria-hidden="true"><path d="M2 15 Q 15 0, 30 15 T 60 15 T 85 15 L 95 10 M 85 10 L 95 10 L 90 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </div>
+                    <button class="video-thumbnail" type="button" data-video-open aria-label="Open a EdTech introduction">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=500&h=240&fit=crop" alt="Teacher explaining a lesson">
+                        <span class="play-btn"><i class="fas fa-play" aria-hidden="true"></i></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hero-collage" aria-label="Learners using digital skills">
+                <div class="collage-col collage-col-one">
+                    <div class="shape semi-circle-orange-top" aria-hidden="true"></div>
+                    <div class="pill collage-image image-red-hoodie"><img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=300&h=600&fit=crop" alt="Learner working at a computer"></div>
+                    <div class="shape semi-circle-red-bottom" aria-hidden="true"></div>
+                </div>
+                <div class="collage-col collage-col-two">
+                    <div class="pill collage-image image-pink-top"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=500&fit=crop" alt="Learner smiling"></div>
+                    <div class="pill collage-image image-plaid-shirt"><img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=300&h=500&fit=crop" alt="Learner portrait"></div>
+                </div>
+                <div class="collage-col collage-col-three">
+                    <div class="pill collage-image image-orange-sweater"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=300&h=600&fit=crop" alt="Learner studying"></div>
+                    <div class="pill collage-image image-white-top"><img src="https://images.unsplash.com/photo-1517365830460-955ce3ccd263?w=300&h=400&fit=crop" alt="Learner using a laptop"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features section page-main" id="features" aria-labelledby="features-title">
+            <div class="features-intro">
+                <h2 id="features-title">Practical Skills<br>For Your Future</h2>
+                <svg class="scribble-arrow-large" viewBox="0 0 120 40" fill="none" aria-hidden="true"><path d="M5 20 Q 25 5, 45 20 T 85 20 T 105 20 L 115 10 M 105 10 L 115 10 L 110 25" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
+                <p>Interactive lessons and thoughtful language support come together to make digital learning clearer and more useful.</p>
+            </div>
+            <div class="features-right">
+                <article class="feature-card card-yellow">
+                    <div class="card-shape shape-purple-corner" aria-hidden="true"></div>
+                    <div class="feature-icon icon-yellow"><i class="fas fa-book-open" aria-hidden="true"></i></div>
+                    <h3>Practical Digital Learning</h3>
+                    <p>Short practical lessons, clear demonstrations and exercises designed to help learners develop usable skills.</p>
+                </article>
+                <article class="feature-card card-blue">
+                    <div class="card-shape shape-purple-flower" aria-hidden="true"><svg viewBox="0 0 100 100"><path fill="#B29CFF" d="M49.5,0 C54.5,18.5 69.5,23.5 88.5,15 C81.5,33.5 88.5,49.5 100,60 C80,62.5 70,76 65,95 C52,78 37,78 20,90 C26,72 16,56 0,48 C18,43 28,27 25,5 C39,18 52,18 49.5,0 Z"/></svg></div>
+                    <div class="feature-icon icon-blue"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+                    <h3>Track Your Progress</h3>
+                    <p>Monitor completed lessons, assessments and learning achievements as your confidence grows.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="platform-overview section page-main" aria-labelledby="overview-title">
+            <div class="section-heading">
+                <span class="eyebrow">Learning that meets you where you are</span>
+                <h2 id="overview-title">A simple path from curiosity to confidence</h2>
+            </div>
+            <div class="overview-grid">
+                <article class="overview-step"><span class="step-number">01</span><h3>Choose a skill</h3><p>Start with foundations that match your goals and experience.</p></article>
+                <article class="overview-step overview-step-blue"><span class="step-number">02</span><h3>Learn in your language</h3><p>Follow concise lessons with English and Luganda support.</p></article>
+                <article class="overview-step overview-step-purple"><span class="step-number">03</span><h3>Practise and progress</h3><p>Try activities, complete assessments and celebrate milestones.</p></article>
+            </div>
+        </section>
+
+        <section class="language-banner section page-main" aria-labelledby="language-title">
+            <div>
+                <span class="eyebrow">Local language learning</span>
+                <h2 id="language-title">Understand the concept.<br><span class="text-purple">Use the skill.</span></h2>
+            </div>
+            <p>Luganda explanations make new ideas approachable while English technical terms remain visible, helping learners build confidence for everyday digital life.</p>
+            <a class="btn btn-primary" href="pages/public/about.html">Learn about our approach <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </section>
+
+        <section class="institutional-cta section page-main" aria-labelledby="institution-title">
+            <div>
+                <span class="eyebrow">For schools and organisations</span>
+                <h2 id="institution-title">Bring practical digital skills to your learners.</h2>
+                <p>Support cohorts with structured programmes, engaging lessons and progress insights.</p>
+            </div>
+            <a class="btn btn-secondary" href="pages/public/organisations.html">Explore for organisations <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a class="logo" href="index.html">EdTech</a>
+            <p>Digital skills made local.</p>
+            <div class="footer-links"><a href="pages/public/courses.html">Courses</a><a href="pages/public/organisations.html">Organisations</a><a href="pages/public/contact.html">Contact</a></div>
+        </div>
+    </footer>
+
+    <div class="modal-backdrop is-hidden" data-video-modal role="dialog" aria-modal="true" aria-labelledby="video-title">
+        <div class="modal landing-modal">
+            <button class="modal-close icon-btn" type="button" data-video-close aria-label="Close introduction"><i class="fas fa-times" aria-hidden="true"></i></button>
+            <span class="eyebrow">Welcome to EdTech</span>
+            <h2 id="video-title">Learning that speaks your language.</h2>
+            <p>EdTech combines short lessons, practical activities and bilingual support so learners can build everyday digital confidence.</p>
+            <a class="btn btn-primary" href="pages/public/courses.html">Explore courses</a>
+        </div>
+    </div>
+    <script src="assets/js/core/app.js" defer></script>
+    <script src="assets/js/pages/landing.js" defer></script>
+    <script src="assets/js/core/language-toggle.js" defer></script>
+</body>
+</html>
+

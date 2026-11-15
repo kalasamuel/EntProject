@@ -1,0 +1,139 @@
+.auth-page {
+    min-height: 100vh;
+}
+
+.auth-shell {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(20rem, 0.8fr);
+    gap: var(--space-8);
+    align-items: center;
+    width: min(100% - 3rem, 68rem);
+    min-height: calc(100vh - 5rem);
+    margin: 0 auto;
+    padding: var(--space-7) 0;
+}
+
+.auth-card {
+    padding: var(--space-7);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.auth-card h1 {
+    margin-bottom: var(--space-3);
+    font-size: 2.2rem;
+}
+
+.auth-card > p {
+    margin-bottom: var(--space-6);
+}
+
+.auth-form {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.auth-form .btn {
+    width: 100%;
+    margin-top: var(--space-2);
+}
+
+.auth-footer {
+    margin-top: var(--space-5);
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.auth-footer a {
+    color: var(--primary-purple);
+    font-weight: 700;
+}
+
+.auth-support {
+    padding: var(--space-7);
+    background: var(--blue-card);
+    border-radius: var(--radius-lg);
+}
+
+.auth-support h2 {
+    margin-bottom: var(--space-3);
+    font-size: 2rem;
+}
+
+.auth-support ul {
+    display: grid;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+}
+
+.auth-support li {
+    display: flex;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--text-gray);
+}
+
+.auth-support li i {
+    color: var(--primary-purple);
+}
+
+.auth-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
+}
+
+.auth-options .card {
+    padding: var(--space-5);
+}
+
+.auth-options h2 {
+    margin-bottom: var(--space-3);
+    font-size: 1.35rem;
+}
+
+.auth-options form {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.check-row {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-3);
+    align-items: center;
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.check-row a {
+    color: var(--primary-purple);
+    font-weight: 600;
+}
+
+.demo-note {
+    padding: var(--space-3);
+    color: var(--text-gray);
+    background: var(--yellow-card);
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+}
+
+@media (max-width: 760px) {
+    .auth-shell {
+        display: block;
+        width: min(100% - 2rem, 34rem);
+        min-height: auto;
+        padding: var(--space-6) 0;
+    }
+
+    .auth-support {
+        display: none;
+    }
+
+    .auth-options {
+        grid-template-columns: 1fr;
+    }
+}

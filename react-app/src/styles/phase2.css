@@ -1,0 +1,211 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.foundation {
+    min-height: 100vh;
+}
+
+.phase2-decorative-graphics {
+    pointer-events: none;
+}
+
+.phase2-decorative-graphics .dot-floating {
+    position: fixed;
+    z-index: 0;
+    border-radius: 50%;
+}
+
+.phase2-decorative-graphics .dot-purple {
+    top: 7rem;
+    left: 2rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    background: var(--primary-purple);
+}
+
+.phase2-decorative-graphics .dot-yellow {
+    top: 17rem;
+    right: 12%;
+    width: 1rem;
+    height: 1rem;
+    background: var(--accent-yellow);
+}
+
+.phase2-decorative-graphics .dot-cyan {
+    right: 2rem;
+    bottom: 5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--accent-cyan);
+}
+
+.phase2-main {
+    padding-top: var(--space-6);
+}
+
+.phase2-heading {
+    max-width: 46rem;
+    margin-bottom: var(--space-6);
+}
+
+.phase2-heading h1 {
+    margin-bottom: var(--space-3);
+    font-size: clamp(2.4rem, 5vw, 3.8rem);
+    line-height: 1.05;
+}
+
+.phase2-heading > p:last-child {
+    max-width: 42rem;
+}
+
+.phase2-section {
+    margin-bottom: var(--space-6);
+}
+
+.phase2-section > h2 {
+    margin-bottom: var(--space-4);
+    font-size: 1.35rem;
+}
+
+.phase2-component-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.phase2-card-content {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-3);
+    min-height: 12rem;
+}
+
+.phase2-card-content h3 {
+    font-size: 1.2rem;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: var(--space-4);
+}
+
+.summary-card {
+    min-height: 9rem;
+    padding: var(--space-5);
+    border-radius: var(--radius-lg);
+}
+
+.summary-card h2 {
+    margin-top: var(--space-4);
+    font-size: 1.8rem;
+}
+
+.summary-card p {
+    font-size: 0.85rem;
+}
+
+.summary-purple {
+    color: var(--white);
+    background: var(--primary-purple);
+}
+
+.summary-purple h2,
+.summary-purple p {
+    color: var(--white);
+}
+
+.summary-yellow {
+    background: var(--yellow-card);
+}
+
+.summary-blue {
+    background: var(--blue-card);
+}
+
+.summary-orange {
+    background: #FFE6DF;
+}
+
+.admin-page .summary-card {
+    box-shadow: var(--shadow-card);
+}
+
+.summary-card__icon {
+    display: inline-flex;
+    margin-bottom: var(--space-3);
+}
+
+.tabs-component__panel {
+    padding: var(--space-4) 0;
+    color: var(--text-gray);
+}
+
+.phase2-form-row {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1fr) auto;
+    gap: var(--space-3);
+    align-items: center;
+    max-width: 38rem;
+}
+
+.phase2-modal-trigger {
+    margin-top: var(--space-3);
+}
+
+.modal__heading {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    align-items: center;
+    margin-bottom: var(--space-4);
+}
+
+.modal__heading h2 {
+    font-size: 1.4rem;
+}
+
+.phase2-utility-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .phase2-component-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .summary-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .phase2-main {
+        padding-top: var(--space-4);
+    }
+
+    .phase2-component-grid,
+    .summary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .phase2-form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .phase2-form-row .btn {
+        width: 100%;
+    }
+}

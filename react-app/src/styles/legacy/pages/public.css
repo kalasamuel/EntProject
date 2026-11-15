@@ -1,0 +1,255 @@
+.public-page .page-main {
+    padding-top: var(--space-7);
+}
+
+.breadcrumb {
+    margin-bottom: var(--space-4);
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.breadcrumb a {
+    color: var(--primary-purple);
+    font-weight: 600;
+}
+
+.public-hero {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--space-8);
+    align-items: center;
+    padding: var(--space-7) 0;
+}
+
+.public-hero h1 {
+    max-width: 42rem;
+    margin-bottom: var(--space-4);
+    font-size: clamp(3rem, 6vw, 4.5rem);
+    line-height: 1.05;
+}
+
+.public-hero .lead {
+    max-width: 40rem;
+    margin-bottom: var(--space-5);
+    font-size: 1.1rem;
+}
+
+.filter-bar {
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: var(--space-3);
+    margin: var(--space-6) 0;
+}
+
+.search-control,
+.filter-select {
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-dark);
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-pill);
+}
+
+.search-control {
+    width: 100%;
+}
+
+.course-grid,
+.benefit-grid,
+.principles-grid,
+.segment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-5);
+}
+
+.course-card,
+.benefit-card,
+.principle-card,
+.segment-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    min-height: 19rem;
+}
+
+.course-card h2,
+.benefit-card h2,
+.principle-card h2,
+.segment-card h2 {
+    font-size: 1.25rem;
+}
+
+.course-card .btn,
+.segment-card .btn {
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.course-meta,
+.tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    color: var(--text-gray);
+    font-size: 0.85rem;
+}
+
+.tag {
+    padding: 0.25rem 0.6rem;
+    color: var(--primary-purple);
+    background: #EEE9FF;
+    border-radius: var(--radius-pill);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.public-visual {
+    position: relative;
+    min-height: 23rem;
+    padding: var(--space-7);
+    overflow: hidden;
+    background: var(--yellow-card);
+    border-radius: var(--radius-lg);
+}
+
+.public-visual-blue {
+    background: var(--blue-card);
+}
+
+.public-visual .visual-orb {
+    position: absolute;
+    top: -3rem;
+    right: -2rem;
+    width: 12rem;
+    height: 12rem;
+    background: var(--lavender);
+    border-radius: 50%;
+    opacity: 0.7;
+}
+
+.visual-icon {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: var(--space-6);
+    place-items: center;
+    color: var(--primary-purple);
+    background: var(--white);
+    border-radius: 50%;
+    font-size: 2rem;
+}
+
+.module-list {
+    display: grid;
+    gap: var(--space-3);
+}
+
+.module-list details {
+    padding: var(--space-4) var(--space-5);
+    background: var(--white);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+}
+
+.module-list summary {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.module-list details p {
+    margin-top: var(--space-3);
+}
+
+.workflow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-4);
+}
+
+.workflow-step {
+    padding: var(--space-5);
+    background: var(--white);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+}
+
+.workflow-step strong {
+    display: block;
+    margin-bottom: var(--space-3);
+    color: var(--primary-purple);
+    font-size: 1.5rem;
+}
+
+.mission-visual {
+    min-height: 20rem;
+    overflow: hidden;
+    border-radius: 5rem;
+}
+
+.mission-visual img {
+    width: 100%;
+    height: 100%;
+    min-height: 20rem;
+    object-fit: cover;
+}
+
+.contact-form {
+    display: grid;
+    gap: var(--space-4);
+}
+
+.contact-form textarea {
+    min-height: 8rem;
+    resize: vertical;
+}
+
+.form-status {
+    padding: var(--space-3);
+    color: var(--primary-purple);
+    background: #EEE9FF;
+    border-radius: var(--radius-sm);
+}
+
+.is-hidden {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .public-hero {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-bar {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-bar .search-control {
+        grid-column: 1 / -1;
+    }
+
+    .course-grid,
+    .benefit-grid,
+    .principles-grid,
+    .segment-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .workflow {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .filter-bar,
+    .course-grid,
+    .benefit-grid,
+    .principles-grid,
+    .segment-grid,
+    .workflow {
+        grid-template-columns: 1fr;
+    }
+}

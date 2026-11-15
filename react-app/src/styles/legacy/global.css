@@ -1,0 +1,56 @@
+body {
+    min-width: 320px;
+    color: var(--text-dark);
+    background: var(--bg-gradient);
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+::selection {
+    color: var(--white);
+    background: var(--primary-purple);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text-dark);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+p {
+    color: var(--text-gray);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid rgba(75, 36, 197, 0.35);
+    outline-offset: 3px;
+}
+
+.logo {
+    color: var(--primary-purple);
+    font-family: "Caveat", cursive;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.text-purple {
+    color: var(--primary-purple);
+}
+
+.text-orange {
+    color: var(--accent-orange);
+}

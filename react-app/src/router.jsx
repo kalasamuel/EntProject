@@ -31,6 +31,24 @@ import {
   LearnerDetailPage,
   ReportsPage,
 } from "./pages/InstructorPages.jsx";
+import {
+  CertificatesPage as OrganisationCertificatesPage,
+  CohortDetailPage,
+  DashboardPage as OrganisationDashboardPage,
+  LearnersPage,
+  ProgrammesPage,
+  ReportsPage as OrganisationReportsPage,
+  SettingsPage,
+} from "./pages/OrganisationPages.jsx";
+import {
+  CertificatesPage as AdminCertificatesPage,
+  ContentLibraryPage,
+  DashboardPage as AdminDashboardPage,
+  LessonEditorPage,
+  OrganisationsPage as AdminOrganisationsPage,
+  TranslationsPage,
+  UsersPage,
+} from "./pages/AdminPages.jsx";
 
 const sourceRoutes = [
   "/",
@@ -171,6 +189,76 @@ const migratedPages = {
     Page: ReportsPage,
     title: "Instructor Reports - EdTech",
     bodyClass: "instructor-page",
+  },
+  "/pages/organisation/dashboard.html": {
+    Page: OrganisationDashboardPage,
+    title: "Organisation Overview - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/programmes.html": {
+    Page: ProgrammesPage,
+    title: "Training Programmes - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/cohort-detail.html": {
+    Page: CohortDetailPage,
+    title: "Cohort Detail - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/learners.html": {
+    Page: LearnersPage,
+    title: "Manage Learners - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/reports.html": {
+    Page: OrganisationReportsPage,
+    title: "Programme Performance - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/certificates.html": {
+    Page: OrganisationCertificatesPage,
+    title: "Certificates and Achievements - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/organisation/settings.html": {
+    Page: SettingsPage,
+    title: "Organisation Settings - EdTech",
+    bodyClass: "organisation-page",
+  },
+  "/pages/admin/dashboard.html": {
+    Page: AdminDashboardPage,
+    title: "Platform Overview - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/organisations.html": {
+    Page: AdminOrganisationsPage,
+    title: "Organisations - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/users.html": {
+    Page: UsersPage,
+    title: "User Management - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/content-library.html": {
+    Page: ContentLibraryPage,
+    title: "Learning Content - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/lesson-editor.html": {
+    Page: LessonEditorPage,
+    title: "Edit Lesson - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/translations.html": {
+    Page: TranslationsPage,
+    title: "Translation Management - EdTech",
+    bodyClass: "admin-page",
+  },
+  "/pages/admin/certificates.html": {
+    Page: AdminCertificatesPage,
+    title: "Certificate Registry - EdTech",
+    bodyClass: "admin-page",
   },
 };
 

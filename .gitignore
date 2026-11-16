@@ -5,3 +5,7 @@
 /reference-template
 prompt.txt
 template.zip
+htmlCSStoReactPROMPT.txt
+react-app/node-modules
+react-app/.npm-cache
+react-app/.tmp

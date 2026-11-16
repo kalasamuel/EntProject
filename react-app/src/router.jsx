@@ -15,6 +15,15 @@ import {
   LoginPage,
   RegisterPage,
 } from "./pages/AuthPages.jsx";
+import {
+  AssessmentPage,
+  CertificatesPage,
+  DashboardPage,
+  LessonPage,
+  MyLearningPage,
+  ProfilePage,
+  ProgressPage,
+} from "./pages/LearnerPages.jsx";
 
 const sourceRoutes = [
   "/",
@@ -95,6 +104,41 @@ const migratedPages = {
     Page: ForgotPasswordPage,
     title: "Forgot Password - EdTech",
     bodyClass: "auth-page",
+  },
+  "/pages/learner/dashboard.html": {
+    Page: DashboardPage,
+    title: "Learner Dashboard - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/my-learning.html": {
+    Page: MyLearningPage,
+    title: "My Learning - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/lesson.html": {
+    Page: LessonPage,
+    title: "Lesson - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/assessment.html": {
+    Page: AssessmentPage,
+    title: "Assessment - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/progress.html": {
+    Page: ProgressPage,
+    title: "Progress - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/certificates.html": {
+    Page: CertificatesPage,
+    title: "Certificates - EdTech",
+    bodyClass: "learner-page",
+  },
+  "/pages/learner/profile.html": {
+    Page: ProfilePage,
+    title: "Profile - EdTech",
+    bodyClass: "learner-page",
   },
 };
 

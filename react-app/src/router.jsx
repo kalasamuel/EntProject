@@ -24,6 +24,13 @@ import {
   ProfilePage,
   ProgressPage,
 } from "./pages/LearnerPages.jsx";
+import {
+  ClassDetailPage,
+  ClassesPage,
+  DashboardPage as InstructorDashboardPage,
+  LearnerDetailPage,
+  ReportsPage,
+} from "./pages/InstructorPages.jsx";
 
 const sourceRoutes = [
   "/",
@@ -139,6 +146,31 @@ const migratedPages = {
     Page: ProfilePage,
     title: "Profile - EdTech",
     bodyClass: "learner-page",
+  },
+  "/pages/instructor/dashboard.html": {
+    Page: InstructorDashboardPage,
+    title: "Instructor Dashboard - EdTech",
+    bodyClass: "instructor-page",
+  },
+  "/pages/instructor/classes.html": {
+    Page: ClassesPage,
+    title: "My Classes - EdTech",
+    bodyClass: "instructor-page",
+  },
+  "/pages/instructor/class-detail.html": {
+    Page: ClassDetailPage,
+    title: "Class Detail - EdTech",
+    bodyClass: "instructor-page",
+  },
+  "/pages/instructor/learner-detail.html": {
+    Page: LearnerDetailPage,
+    title: "Learner Detail - EdTech",
+    bodyClass: "instructor-page",
+  },
+  "/pages/instructor/reports.html": {
+    Page: ReportsPage,
+    title: "Instructor Reports - EdTech",
+    bodyClass: "instructor-page",
   },
 };
 

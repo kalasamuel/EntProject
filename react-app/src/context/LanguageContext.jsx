@@ -4,16 +4,33 @@ const storageKey = "edtech-language";
 const LanguageContext = createContext(null);
 
 function getInitialLanguage() {
-  const savedLanguage = window.localStorage.getItem(storageKey);
-  return savedLanguage === "Luganda" ? "Luganda" : "English";
+  if (typeof window === "undefined") {
+    return "English";
+  }
+
+  try {
+    const savedLanguage = window.localStorage.getItem(storageKey);
+    return savedLanguage === "Luganda" ? "Luganda" : "English";
+  } catch {
+    return "English";
+  }
 }
 
 export function LanguageProvider({ children }) {
   const [language, setLanguage] = useState(getInitialLanguage);
 
   useEffect(() => {
+    if (typeof document === "undefined" || typeof window === "undefined") {
+      return;
+    }
+
     document.documentElement.lang = language === "Luganda" ? "lg" : "en";
-    window.localStorage.setItem(storageKey, language);
+
+    try {
+      window.localStorage.setItem(storageKey, language);
+    } catch {
+      // Ignore storage failures from privacy-restricted browsers.
+    }
   }, [language]);
 
   const value = useMemo(

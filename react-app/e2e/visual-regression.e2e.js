@@ -72,6 +72,12 @@ test("capture all pages at the source baseline viewports", async ({ page }) => {
         await expect(page.locator("h1").first(), route).toBeVisible();
         await expect(page.locator("html"), route).toHaveAttribute("lang", "en");
         expect(await page.title(), route).toBe(capture.title);
+        const documentWidth = await page.evaluate(
+          () => document.documentElement.scrollWidth,
+        );
+        expect(documentWidth, `${route} horizontal overflow at ${viewport.name}`).toBeLessThanOrEqual(
+          viewport.width,
+        );
         await page.locator("#edtech-google-fonts").waitFor({ state: "attached" });
         await page.waitForLoadState("networkidle");
         await page.evaluate(async () => {

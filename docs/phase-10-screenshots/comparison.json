@@ -1,0 +1,1472 @@
+[
+  {
+    "page": "index.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      2363
+    ],
+    "react_size": [
+      1440,
+      2363
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/admin/certificates.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.532,
+    "pixels_over_30_pct": 0.41
+  },
+  {
+    "page": "pages/admin/content-library.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.54,
+    "pixels_over_30_pct": 0.41
+  },
+  {
+    "page": "pages/admin/dashboard.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1210
+    ],
+    "react_size": [
+      1440,
+      1210
+    ],
+    "mae": 0.334,
+    "pixels_over_30_pct": 0.27
+  },
+  {
+    "page": "pages/admin/lesson-editor.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1250
+    ],
+    "react_size": [
+      1440,
+      1250
+    ],
+    "mae": 0.342,
+    "pixels_over_30_pct": 0.27
+  },
+  {
+    "page": "pages/admin/organisations.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.581,
+    "pixels_over_30_pct": 0.46
+  },
+  {
+    "page": "pages/admin/translations.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1107
+    ],
+    "react_size": [
+      1440,
+      1107
+    ],
+    "mae": 0.365,
+    "pixels_over_30_pct": 0.3
+  },
+  {
+    "page": "pages/admin/users.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.567,
+    "pixels_over_30_pct": 0.43
+  },
+  {
+    "page": "pages/auth/forgot-password.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      906
+    ],
+    "react_size": [
+      1440,
+      906
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/auth/login.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      920
+    ],
+    "react_size": [
+      1440,
+      920
+    ],
+    "mae": 0.001,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/auth/register.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1061
+    ],
+    "react_size": [
+      1440,
+      1061
+    ],
+    "mae": 0.002,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/class-detail.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1206
+    ],
+    "react_size": [
+      1440,
+      1206
+    ],
+    "mae": 0.26,
+    "pixels_over_30_pct": 0.23
+  },
+  {
+    "page": "pages/instructor/classes.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1048
+    ],
+    "react_size": [
+      1440,
+      1048
+    ],
+    "mae": 0.288,
+    "pixels_over_30_pct": 0.27
+  },
+  {
+    "page": "pages/instructor/dashboard.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1321
+    ],
+    "react_size": [
+      1440,
+      1321
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/learner-detail.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1241
+    ],
+    "react_size": [
+      1440,
+      1241
+    ],
+    "mae": 0.25,
+    "pixels_over_30_pct": 0.23
+  },
+  {
+    "page": "pages/instructor/reports.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1048
+    ],
+    "react_size": [
+      1440,
+      1048
+    ],
+    "mae": 0.314,
+    "pixels_over_30_pct": 0.29
+  },
+  {
+    "page": "pages/learner/assessment.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.003,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/certificates.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/dashboard.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1766
+    ],
+    "react_size": [
+      1440,
+      1766
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/lesson.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1340
+    ],
+    "react_size": [
+      1440,
+      1340
+    ],
+    "mae": 0.059,
+    "pixels_over_30_pct": 0.09
+  },
+  {
+    "page": "pages/learner/my-learning.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/profile.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1129
+    ],
+    "react_size": [
+      1440,
+      1129
+    ],
+    "mae": 0.017,
+    "pixels_over_30_pct": 0.02
+  },
+  {
+    "page": "pages/learner/progress.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1308
+    ],
+    "react_size": [
+      1440,
+      1308
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/certificates.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/cohort-detail.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1180
+    ],
+    "react_size": [
+      1440,
+      1180
+    ],
+    "mae": 0.338,
+    "pixels_over_30_pct": 0.31
+  },
+  {
+    "page": "pages/organisation/dashboard.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1341
+    ],
+    "react_size": [
+      1440,
+      1341
+    ],
+    "mae": 0.362,
+    "pixels_over_30_pct": 0.31
+  },
+  {
+    "page": "pages/organisation/learners.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/programmes.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      900
+    ],
+    "react_size": [
+      1440,
+      900
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/reports.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1511
+    ],
+    "react_size": [
+      1440,
+      1511
+    ],
+    "mae": 0.28,
+    "pixels_over_30_pct": 0.26
+  },
+  {
+    "page": "pages/organisation/settings.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1134
+    ],
+    "react_size": [
+      1440,
+      1134
+    ],
+    "mae": 0.433,
+    "pixels_over_30_pct": 0.39
+  },
+  {
+    "page": "pages/public/about.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      2221
+    ],
+    "react_size": [
+      1440,
+      2221
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/contact.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      942
+    ],
+    "react_size": [
+      1440,
+      942
+    ],
+    "mae": 0.048,
+    "pixels_over_30_pct": 0.05
+  },
+  {
+    "page": "pages/public/course-detail.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      2292
+    ],
+    "react_size": [
+      1440,
+      2292
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/courses.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      1771
+    ],
+    "react_size": [
+      1440,
+      1771
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/organisations.html",
+    "viewport": "desktop",
+    "baseline_size": [
+      1440,
+      2540
+    ],
+    "react_size": [
+      1440,
+      2540
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "index.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      3916
+    ],
+    "react_size": [
+      768,
+      3916
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/admin/certificates.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.275,
+    "pixels_over_30_pct": 0.23
+  },
+  {
+    "page": "pages/admin/content-library.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1111
+    ],
+    "react_size": [
+      768,
+      1111
+    ],
+    "mae": 0.189,
+    "pixels_over_30_pct": 0.17
+  },
+  {
+    "page": "pages/admin/dashboard.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1613
+    ],
+    "react_size": [
+      768,
+      1613
+    ],
+    "mae": 0.13,
+    "pixels_over_30_pct": 0.12
+  },
+  {
+    "page": "pages/admin/lesson-editor.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1606
+    ],
+    "react_size": [
+      768,
+      1606
+    ],
+    "mae": 0.154,
+    "pixels_over_30_pct": 0.15
+  },
+  {
+    "page": "pages/admin/organisations.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.364,
+    "pixels_over_30_pct": 0.3
+  },
+  {
+    "page": "pages/admin/translations.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1360
+    ],
+    "react_size": [
+      768,
+      1360
+    ],
+    "mae": 0.305,
+    "pixels_over_30_pct": 0.27
+  },
+  {
+    "page": "pages/admin/users.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.312,
+    "pixels_over_30_pct": 0.26
+  },
+  {
+    "page": "pages/auth/forgot-password.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/auth/login.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.041,
+    "pixels_over_30_pct": 0.04
+  },
+  {
+    "page": "pages/auth/register.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1077
+    ],
+    "react_size": [
+      768,
+      1077
+    ],
+    "mae": 0.004,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/class-detail.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1558
+    ],
+    "react_size": [
+      768,
+      1558
+    ],
+    "mae": 0.165,
+    "pixels_over_30_pct": 0.17
+  },
+  {
+    "page": "pages/instructor/classes.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/dashboard.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1943
+    ],
+    "react_size": [
+      768,
+      1943
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/learner-detail.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1645
+    ],
+    "react_size": [
+      768,
+      1645
+    ],
+    "mae": 0.144,
+    "pixels_over_30_pct": 0.13
+  },
+  {
+    "page": "pages/instructor/reports.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1063
+    ],
+    "react_size": [
+      768,
+      1063
+    ],
+    "mae": 0.277,
+    "pixels_over_30_pct": 0.26
+  },
+  {
+    "page": "pages/learner/assessment.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.005,
+    "pixels_over_30_pct": 0.01
+  },
+  {
+    "page": "pages/learner/certificates.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/dashboard.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2099
+    ],
+    "react_size": [
+      768,
+      2099
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/lesson.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1901
+    ],
+    "react_size": [
+      768,
+      1901
+    ],
+    "mae": 0.056,
+    "pixels_over_30_pct": 0.09
+  },
+  {
+    "page": "pages/learner/my-learning.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.145,
+    "pixels_over_30_pct": 0.15
+  },
+  {
+    "page": "pages/learner/profile.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1479
+    ],
+    "react_size": [
+      768,
+      1479
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/progress.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1722
+    ],
+    "react_size": [
+      768,
+      1722
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/certificates.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/cohort-detail.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1290
+    ],
+    "react_size": [
+      768,
+      1290
+    ],
+    "mae": 0.18,
+    "pixels_over_30_pct": 0.17
+  },
+  {
+    "page": "pages/organisation/dashboard.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2016
+    ],
+    "react_size": [
+      768,
+      2016
+    ],
+    "mae": 0.115,
+    "pixels_over_30_pct": 0.11
+  },
+  {
+    "page": "pages/organisation/learners.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1024
+    ],
+    "react_size": [
+      768,
+      1024
+    ],
+    "mae": 0.047,
+    "pixels_over_30_pct": 0.05
+  },
+  {
+    "page": "pages/organisation/programmes.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1166
+    ],
+    "react_size": [
+      768,
+      1166
+    ],
+    "mae": 0.239,
+    "pixels_over_30_pct": 0.23
+  },
+  {
+    "page": "pages/organisation/reports.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2061
+    ],
+    "react_size": [
+      768,
+      2061
+    ],
+    "mae": 0.159,
+    "pixels_over_30_pct": 0.15
+  },
+  {
+    "page": "pages/organisation/settings.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1747
+    ],
+    "react_size": [
+      768,
+      1747
+    ],
+    "mae": 0.162,
+    "pixels_over_30_pct": 0.15
+  },
+  {
+    "page": "pages/public/about.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2867
+    ],
+    "react_size": [
+      768,
+      2867
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/contact.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      1352
+    ],
+    "react_size": [
+      768,
+      1352
+    ],
+    "mae": 0.063,
+    "pixels_over_30_pct": 0.06
+  },
+  {
+    "page": "pages/public/course-detail.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2544
+    ],
+    "react_size": [
+      768,
+      2544
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/courses.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      2541
+    ],
+    "react_size": [
+      768,
+      2541
+    ],
+    "mae": 0.094,
+    "pixels_over_30_pct": 0.1
+  },
+  {
+    "page": "pages/public/organisations.html",
+    "viewport": "tablet",
+    "baseline_size": [
+      768,
+      3623
+    ],
+    "react_size": [
+      768,
+      3623
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "index.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      4374
+    ],
+    "react_size": [
+      375,
+      4374
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/admin/certificates.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      812
+    ],
+    "react_size": [
+      375,
+      812
+    ],
+    "mae": 0.808,
+    "pixels_over_30_pct": 0.69
+  },
+  {
+    "page": "pages/admin/content-library.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1546
+    ],
+    "react_size": [
+      375,
+      1546
+    ],
+    "mae": 0.201,
+    "pixels_over_30_pct": 0.19
+  },
+  {
+    "page": "pages/admin/dashboard.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2306
+    ],
+    "react_size": [
+      375,
+      2306
+    ],
+    "mae": 0.135,
+    "pixels_over_30_pct": 0.12
+  },
+  {
+    "page": "pages/admin/lesson-editor.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1800
+    ],
+    "react_size": [
+      375,
+      1800
+    ],
+    "mae": 0.215,
+    "pixels_over_30_pct": 0.21
+  },
+  {
+    "page": "pages/admin/organisations.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      928
+    ],
+    "react_size": [
+      375,
+      928
+    ],
+    "mae": 0.434,
+    "pixels_over_30_pct": 0.4
+  },
+  {
+    "page": "pages/admin/translations.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1657
+    ],
+    "react_size": [
+      375,
+      1657
+    ],
+    "mae": 0.313,
+    "pixels_over_30_pct": 0.28
+  },
+  {
+    "page": "pages/admin/users.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      812
+    ],
+    "react_size": [
+      375,
+      812
+    ],
+    "mae": 0.594,
+    "pixels_over_30_pct": 0.52
+  },
+  {
+    "page": "pages/auth/forgot-password.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      905
+    ],
+    "react_size": [
+      375,
+      905
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/auth/login.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1056
+    ],
+    "react_size": [
+      375,
+      1056
+    ],
+    "mae": 0.002,
+    "pixels_over_30_pct": 0.01
+  },
+  {
+    "page": "pages/auth/register.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1961
+    ],
+    "react_size": [
+      375,
+      1961
+    ],
+    "mae": 0.042,
+    "pixels_over_30_pct": 0.04
+  },
+  {
+    "page": "pages/instructor/class-detail.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2006
+    ],
+    "react_size": [
+      375,
+      2006
+    ],
+    "mae": 0.193,
+    "pixels_over_30_pct": 0.21
+  },
+  {
+    "page": "pages/instructor/classes.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1639
+    ],
+    "react_size": [
+      375,
+      1639
+    ],
+    "mae": 0.282,
+    "pixels_over_30_pct": 0.27
+  },
+  {
+    "page": "pages/instructor/dashboard.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2815
+    ],
+    "react_size": [
+      375,
+      2815
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/instructor/learner-detail.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2062
+    ],
+    "react_size": [
+      375,
+      2062
+    ],
+    "mae": 0.166,
+    "pixels_over_30_pct": 0.16
+  },
+  {
+    "page": "pages/instructor/reports.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1725
+    ],
+    "react_size": [
+      375,
+      1725
+    ],
+    "mae": 0.267,
+    "pixels_over_30_pct": 0.26
+  },
+  {
+    "page": "pages/learner/assessment.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      966
+    ],
+    "react_size": [
+      375,
+      966
+    ],
+    "mae": 0.011,
+    "pixels_over_30_pct": 0.01
+  },
+  {
+    "page": "pages/learner/certificates.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      861
+    ],
+    "react_size": [
+      375,
+      861
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/dashboard.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2994
+    ],
+    "react_size": [
+      375,
+      2994
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/lesson.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2227
+    ],
+    "react_size": [
+      375,
+      2227
+    ],
+    "mae": 0.062,
+    "pixels_over_30_pct": 0.1
+  },
+  {
+    "page": "pages/learner/my-learning.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1388
+    ],
+    "react_size": [
+      375,
+      1388
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/profile.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1575
+    ],
+    "react_size": [
+      375,
+      1575
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/learner/progress.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2130
+    ],
+    "react_size": [
+      375,
+      2130
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/organisation/certificates.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1126
+    ],
+    "react_size": [
+      375,
+      1126
+    ],
+    "mae": 0.298,
+    "pixels_over_30_pct": 0.29
+  },
+  {
+    "page": "pages/organisation/cohort-detail.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1762
+    ],
+    "react_size": [
+      375,
+      1762
+    ],
+    "mae": 0.19,
+    "pixels_over_30_pct": 0.18
+  },
+  {
+    "page": "pages/organisation/dashboard.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2799
+    ],
+    "react_size": [
+      375,
+      2799
+    ],
+    "mae": 0.12,
+    "pixels_over_30_pct": 0.12
+  },
+  {
+    "page": "pages/organisation/learners.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      848
+    ],
+    "react_size": [
+      375,
+      848
+    ],
+    "mae": 0.512,
+    "pixels_over_30_pct": 0.51
+  },
+  {
+    "page": "pages/organisation/programmes.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1646
+    ],
+    "react_size": [
+      375,
+      1646
+    ],
+    "mae": 0.205,
+    "pixels_over_30_pct": 0.2
+  },
+  {
+    "page": "pages/organisation/reports.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      2147
+    ],
+    "react_size": [
+      375,
+      2147
+    ],
+    "mae": 0.202,
+    "pixels_over_30_pct": 0.2
+  },
+  {
+    "page": "pages/organisation/settings.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1930
+    ],
+    "react_size": [
+      375,
+      1930
+    ],
+    "mae": 0.309,
+    "pixels_over_30_pct": 0.3
+  },
+  {
+    "page": "pages/public/about.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      3443
+    ],
+    "react_size": [
+      375,
+      3443
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/contact.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      1565
+    ],
+    "react_size": [
+      375,
+      1565
+    ],
+    "mae": 0.005,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/course-detail.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      3388
+    ],
+    "react_size": [
+      375,
+      3388
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  },
+  {
+    "page": "pages/public/courses.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      3876
+    ],
+    "react_size": [
+      375,
+      3876
+    ],
+    "mae": 0.126,
+    "pixels_over_30_pct": 0.13
+  },
+  {
+    "page": "pages/public/organisations.html",
+    "viewport": "mobile",
+    "baseline_size": [
+      375,
+      5568
+    ],
+    "react_size": [
+      375,
+      5568
+    ],
+    "mae": 0.0,
+    "pixels_over_30_pct": 0.0
+  }
+]

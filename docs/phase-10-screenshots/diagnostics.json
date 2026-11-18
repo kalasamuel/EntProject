@@ -1,0 +1,956 @@
+{
+  "browser": "Playwright Chromium",
+  "device_scale_factor": 1,
+  "language": "English",
+  "captures": [
+    {
+      "page": "index.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\root.png",
+      "title": "EdTech - Digital Skills in Local Languages",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/certificates.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--certificates.png",
+      "title": "Certificate Registry - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/content-library.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--content-library.png",
+      "title": "Learning Content - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/dashboard.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--dashboard.png",
+      "title": "Platform Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/lesson-editor.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--lesson-editor.png",
+      "title": "Lesson Editor - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/organisations.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--organisations.png",
+      "title": "Organisations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/translations.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--translations.png",
+      "title": "Translation Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/users.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--admin--users.png",
+      "title": "User Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/forgot-password.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--auth--forgot-password.png",
+      "title": "Forgot Password - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/login.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--auth--login.png",
+      "title": "Login - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/register.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--auth--register.png",
+      "title": "Join EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/class-detail.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--instructor--class-detail.png",
+      "title": "Class Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/classes.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--instructor--classes.png",
+      "title": "My Classes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/dashboard.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--instructor--dashboard.png",
+      "title": "Instructor Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/learner-detail.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--instructor--learner-detail.png",
+      "title": "Learner Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/reports.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--instructor--reports.png",
+      "title": "Teaching Reports - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/assessment.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--assessment.png",
+      "title": "Assessment - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/certificates.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--certificates.png",
+      "title": "Certificates - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/dashboard.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--dashboard.png",
+      "title": "Learner Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/lesson.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--lesson.png",
+      "title": "Lesson - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/my-learning.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--my-learning.png",
+      "title": "My Learning - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/profile.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--profile.png",
+      "title": "Profile - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/progress.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--learner--progress.png",
+      "title": "Progress - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/certificates.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--certificates.png",
+      "title": "Certificates and Achievements - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/cohort-detail.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--cohort-detail.png",
+      "title": "Cohort Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/dashboard.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--dashboard.png",
+      "title": "Organisation Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/learners.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--learners.png",
+      "title": "Manage Learners - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/programmes.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--programmes.png",
+      "title": "Training Programmes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/reports.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--reports.png",
+      "title": "Programme Performance - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/settings.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--organisation--settings.png",
+      "title": "Organisation Settings - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/about.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--public--about.png",
+      "title": "About EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/contact.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--public--contact.png",
+      "title": "Contact EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/course-detail.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--public--course-detail.png",
+      "title": "Digital Foundations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/courses.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--public--courses.png",
+      "title": "Courses - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/organisations.html",
+      "viewport": "desktop",
+      "width": 1440,
+      "height": 900,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\desktop\\pages--public--organisations.png",
+      "title": "For Organisations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "index.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\root.png",
+      "title": "EdTech - Digital Skills in Local Languages",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/certificates.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--certificates.png",
+      "title": "Certificate Registry - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/content-library.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--content-library.png",
+      "title": "Learning Content - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/dashboard.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--dashboard.png",
+      "title": "Platform Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/lesson-editor.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--lesson-editor.png",
+      "title": "Lesson Editor - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/organisations.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--organisations.png",
+      "title": "Organisations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/translations.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--translations.png",
+      "title": "Translation Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/users.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--admin--users.png",
+      "title": "User Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/forgot-password.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--auth--forgot-password.png",
+      "title": "Forgot Password - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/login.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--auth--login.png",
+      "title": "Login - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/register.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--auth--register.png",
+      "title": "Join EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/class-detail.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--instructor--class-detail.png",
+      "title": "Class Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/classes.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--instructor--classes.png",
+      "title": "My Classes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/dashboard.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--instructor--dashboard.png",
+      "title": "Instructor Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/learner-detail.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--instructor--learner-detail.png",
+      "title": "Learner Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/reports.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--instructor--reports.png",
+      "title": "Teaching Reports - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/assessment.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--assessment.png",
+      "title": "Assessment - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/certificates.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--certificates.png",
+      "title": "Certificates - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/dashboard.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--dashboard.png",
+      "title": "Learner Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/lesson.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--lesson.png",
+      "title": "Lesson - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/my-learning.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--my-learning.png",
+      "title": "My Learning - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/profile.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--profile.png",
+      "title": "Profile - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/progress.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--learner--progress.png",
+      "title": "Progress - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/certificates.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--certificates.png",
+      "title": "Certificates and Achievements - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/cohort-detail.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--cohort-detail.png",
+      "title": "Cohort Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/dashboard.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--dashboard.png",
+      "title": "Organisation Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/learners.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--learners.png",
+      "title": "Manage Learners - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/programmes.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--programmes.png",
+      "title": "Training Programmes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/reports.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--reports.png",
+      "title": "Programme Performance - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/settings.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--organisation--settings.png",
+      "title": "Organisation Settings - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/about.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--public--about.png",
+      "title": "About EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/contact.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--public--contact.png",
+      "title": "Contact EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/course-detail.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--public--course-detail.png",
+      "title": "Digital Foundations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/courses.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--public--courses.png",
+      "title": "Courses - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/organisations.html",
+      "viewport": "tablet",
+      "width": 768,
+      "height": 1024,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\tablet\\pages--public--organisations.png",
+      "title": "For Organisations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "index.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\root.png",
+      "title": "EdTech - Digital Skills in Local Languages",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/certificates.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--certificates.png",
+      "title": "Certificate Registry - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/content-library.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--content-library.png",
+      "title": "Learning Content - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/dashboard.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--dashboard.png",
+      "title": "Platform Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/lesson-editor.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--lesson-editor.png",
+      "title": "Lesson Editor - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/organisations.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--organisations.png",
+      "title": "Organisations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/translations.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--translations.png",
+      "title": "Translation Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/admin/users.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--admin--users.png",
+      "title": "User Management - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/forgot-password.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--auth--forgot-password.png",
+      "title": "Forgot Password - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/login.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--auth--login.png",
+      "title": "Login - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/auth/register.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--auth--register.png",
+      "title": "Join EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/class-detail.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--instructor--class-detail.png",
+      "title": "Class Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/classes.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--instructor--classes.png",
+      "title": "My Classes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/dashboard.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--instructor--dashboard.png",
+      "title": "Instructor Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/learner-detail.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--instructor--learner-detail.png",
+      "title": "Learner Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/instructor/reports.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--instructor--reports.png",
+      "title": "Teaching Reports - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/assessment.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--assessment.png",
+      "title": "Assessment - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/certificates.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--certificates.png",
+      "title": "Certificates - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/dashboard.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--dashboard.png",
+      "title": "Learner Dashboard - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/lesson.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--lesson.png",
+      "title": "Lesson - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/my-learning.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--my-learning.png",
+      "title": "My Learning - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/profile.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--profile.png",
+      "title": "Profile - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/learner/progress.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--learner--progress.png",
+      "title": "Progress - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/certificates.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--certificates.png",
+      "title": "Certificates and Achievements - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/cohort-detail.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--cohort-detail.png",
+      "title": "Cohort Detail - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/dashboard.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--dashboard.png",
+      "title": "Organisation Overview - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/learners.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--learners.png",
+      "title": "Manage Learners - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/programmes.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--programmes.png",
+      "title": "Training Programmes - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/reports.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--reports.png",
+      "title": "Programme Performance - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/organisation/settings.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--organisation--settings.png",
+      "title": "Organisation Settings - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/about.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--public--about.png",
+      "title": "About EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/contact.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--public--contact.png",
+      "title": "Contact EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/course-detail.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--public--course-detail.png",
+      "title": "Digital Foundations - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/courses.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--public--courses.png",
+      "title": "Courses - EdTech",
+      "lang": "en"
+    },
+    {
+      "page": "pages/public/organisations.html",
+      "viewport": "mobile",
+      "width": 375,
+      "height": 812,
+      "screenshot": "D:\\computer_science\\Year 3\\Entrepreneurship\\Project\\EdTechNew\\docs\\phase-10-screenshots\\mobile\\pages--public--organisations.png",
+      "title": "For Organisations - EdTech",
+      "lang": "en"
+    }
+  ],
+  "retries": [],
+  "page_errors": [],
+  "console_errors": [],
+  "failed_requests": []
+}

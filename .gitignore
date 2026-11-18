@@ -1,6 +1,11 @@
 /assets
 /backup
 /docs
+!/docs/
+/docs/*
+!/docs/*.md
+!/docs/phase-10-screenshots/
+!/docs/phase-10-screenshots/**
 /pages
 /reference-template
 prompt.txt

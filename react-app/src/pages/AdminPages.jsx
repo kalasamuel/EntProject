@@ -1,16 +1,20 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { AdminHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import adminStyles from "../styles/legacy/pages/admin.css?inline";
 
 function AdminLayout({ currentPath, children }) {
   return (
-    <>
-      <style>{adminStyles}</style>
-      <PageFontLoader includeCaveat={false} />
-      <AdminHeader currentPath={currentPath} />
-      {children}
-    </>
+    <LocalizedContent>
+      <>
+        <style>{adminStyles}</style>
+        <PageFontLoader includeCaveat={false} />
+        <AdminHeader currentPath={currentPath} />
+        {children}
+      </>
+    </LocalizedContent>
   );
 }
 
@@ -131,6 +135,14 @@ export function OrganisationsPage({ currentPath }) {
     { name: "Sample Community School", type: "School", learners: 42, programmes: 2, status: "Active" },
     { name: "Demo Skills NGO", type: "NGO", learners: 28, programmes: 1, status: "Pending" },
   ];
+  const [query, setQuery] = useState("");
+  const [type, setType] = useState("");
+  const [status, setStatus] = useState("");
+  const visibleRows = rows.filter((row) =>
+    row.name.toLowerCase().includes(query.trim().toLowerCase()) &&
+    (!type || row.type === type) &&
+    (!status || row.status === status),
+  );
 
   return (
     <AdminLayout currentPath={currentPath}>
@@ -149,17 +161,17 @@ export function OrganisationsPage({ currentPath }) {
         </div>
 
         <div className="filter-row">
-          <input className="search-control" type="search" placeholder="Search organisations" aria-label="Search organisations" />
-          <select className="select-control" aria-label="Organisation type">
-            <option>All types</option>
-            <option>School</option>
-            <option>NGO</option>
-            <option>Training centre</option>
+          <input className="search-control" data-admin-search type="search" placeholder="Search organisations" aria-label="Search organisations" value={query} onChange={(event) => setQuery(event.target.value)} />
+          <select className="select-control" aria-label="Organisation type" value={type} onChange={(event) => setType(event.target.value)}>
+            <option value="">All types</option>
+            <option value="School">School</option>
+            <option value="NGO">NGO</option>
+            <option value="Training centre">Training centre</option>
           </select>
-          <select className="select-control" aria-label="Organisation status">
-            <option>All status</option>
-            <option>Active</option>
-            <option>Pending</option>
+          <select className="select-control" aria-label="Organisation status" value={status} onChange={(event) => setStatus(event.target.value)}>
+            <option value="">All status</option>
+            <option value="Active">Active</option>
+            <option value="Pending">Pending</option>
           </select>
         </div>
 
@@ -176,7 +188,7 @@ export function OrganisationsPage({ currentPath }) {
               </tr>
             </thead>
             <tbody>
-              {rows.map((row) => (
+              {visibleRows.map((row) => (
                 <tr key={row.name} data-admin-row>
                   <td>{row.name}</td>
                   <td>{row.type}</td>
@@ -195,6 +207,20 @@ export function OrganisationsPage({ currentPath }) {
 }
 
 export function UsersPage({ currentPath }) {
+  const rows = [
+    { name: "Demo learner", role: "learner", roleLabel: "Learner", organisation: "Demo Learning Organisation", date: "10 Nov 2026" },
+    { name: "Demo Teacher", role: "instructor", roleLabel: "Instructor", organisation: "Demo Learning Organisation", date: "02 Nov 2026" },
+    { name: "Demo Administrator", role: "admin", roleLabel: "Administrator", organisation: "EdTech platform", date: "01 Nov 2026" },
+  ];
+  const [query, setQuery] = useState("");
+  const [role, setRole] = useState("");
+  const visibleRows = rows.filter((row) =>
+    `${row.name} ${row.roleLabel} ${row.organisation}`
+      .toLowerCase()
+      .includes(query.trim().toLowerCase()) &&
+    (!role || row.role === role),
+  );
+
   return (
     <AdminLayout currentPath={currentPath}>
       <main className="page-main">
@@ -209,8 +235,8 @@ export function UsersPage({ currentPath }) {
         </div>
 
         <div className="filter-row">
-          <input className="search-control" type="search" placeholder="Search users" aria-label="Search users" />
-          <select className="select-control" aria-label="Role">
+          <input className="search-control" data-admin-search type="search" placeholder="Search users" aria-label="Search users" value={query} onChange={(event) => setQuery(event.target.value)} />
+          <select className="select-control" data-role-filter aria-label="Role" value={role} onChange={(event) => setRole(event.target.value)}>
             <option value="">All roles</option>
             <option value="learner">Learner</option>
             <option value="instructor">Instructor</option>
@@ -230,27 +256,15 @@ export function UsersPage({ currentPath }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Demo learner</td>
-                <td>Learner</td>
-                <td>Demo Learning Organisation</td>
-                <td><span className="tag">Active</span></td>
-                <td>10 Nov 2026</td>
-              </tr>
-              <tr>
-                <td>Demo Teacher</td>
-                <td>Instructor</td>
-                <td>Demo Learning Organisation</td>
-                <td><span className="tag">Active</span></td>
-                <td>02 Nov 2026</td>
-              </tr>
-              <tr>
-                <td>Demo Administrator</td>
-                <td>Administrator</td>
-                <td>EdTech platform</td>
-                <td><span className="tag">Active</span></td>
-                <td>01 Nov 2026</td>
-              </tr>
+              {visibleRows.map((row) => (
+                <tr key={row.name} data-admin-row data-role={row.role}>
+                  <td>{row.name}</td>
+                  <td>{row.roleLabel}</td>
+                  <td>{row.organisation}</td>
+                  <td><span className="tag">Active</span></td>
+                  <td>{row.date}</td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -406,6 +420,20 @@ export function LessonEditorPage({ currentPath }) {
 }
 
 export function TranslationsPage({ currentPath }) {
+  const rows = [
+    { lesson: "Introduction to Computers", language: "Luganda", status: "Language Review", version: "v0.3" },
+    { lesson: "Computer Components", language: "Luganda", status: "Draft", version: "v0.1" },
+  ];
+  const [course, setCourse] = useState("");
+  const [language, setLanguage] = useState("Luganda");
+  const [reviewStatus, setReviewStatus] = useState("");
+  const [reviewMessage, setReviewMessage] = useState("Review not yet submitted.");
+  const visibleRows = rows.filter((row) =>
+    (!course || course === "Digital Foundations") &&
+    (!language || row.language === language) &&
+    (!reviewStatus || row.status === reviewStatus),
+  );
+
   return (
     <AdminLayout currentPath={currentPath}>
       <main className="page-main">
@@ -420,15 +448,15 @@ export function TranslationsPage({ currentPath }) {
         </div>
 
         <div className="filter-row">
-          <select className="select-control" aria-label="Course">
+          <select className="select-control" data-translation-course value={course} onChange={(event) => setCourse(event.target.value)} aria-label="Course">
             <option value="">All courses</option>
             <option value="Digital Foundations">Digital Foundations</option>
           </select>
-          <select className="select-control" aria-label="Language">
+          <select className="select-control" data-translation-language value={language} onChange={(event) => setLanguage(event.target.value)} aria-label="Language">
             <option value="Luganda">Luganda</option>
             <option value="English">English</option>
           </select>
-          <select className="select-control" aria-label="Review status">
+          <select className="select-control" data-translation-status value={reviewStatus} onChange={(event) => setReviewStatus(event.target.value)} aria-label="Review status">
             <option value="">All review statuses</option>
             <option value="Draft">Draft</option>
             <option value="Language Review">Language Review</option>
@@ -450,24 +478,17 @@ export function TranslationsPage({ currentPath }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Introduction to Computers</td>
-                <td>Luganda</td>
-                <td><span className="tag">Language Review</span></td>
-                <td>Unassigned</td>
-                <td>Pending</td>
-                <td>v0.3</td>
-                <td><a className="btn btn-secondary" href="#review">Open</a></td>
-              </tr>
-              <tr>
-                <td>Computer Components</td>
-                <td>Luganda</td>
-                <td><span className="tag">Draft</span></td>
-                <td>Unassigned</td>
-                <td>Pending</td>
-                <td>v0.1</td>
-                <td><a className="btn btn-secondary" href="#review">Open</a></td>
-              </tr>
+              {visibleRows.map((row) => (
+                <tr key={row.lesson} data-translation-row data-course="Digital Foundations" data-language={row.language} data-status={row.status}>
+                  <td>{row.lesson}</td>
+                  <td>{row.language}</td>
+                  <td><span className="tag">{row.status}</span></td>
+                  <td>Unassigned</td>
+                  <td>Pending</td>
+                  <td>{row.version}</td>
+                  <td><a className="btn btn-secondary" href="#review">Open</a></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
@@ -488,11 +509,11 @@ export function TranslationsPage({ currentPath }) {
             </div>
           </div>
           <div className="cluster" style={{ marginTop: "var(--space-4)" }}>
-            <button className="btn btn-primary" type="button">Approve</button>
-            <button className="btn btn-secondary" type="button">Request changes</button>
+            <button className="btn btn-primary" type="button" data-review-action="approve" onClick={() => setReviewMessage("Review saved as approved.")}>Approve</button>
+            <button className="btn btn-secondary" type="button" data-review-action="changes" onClick={() => setReviewMessage("Changes requested; translation remains unpublished.")}>Request changes</button>
             <button className="btn btn-secondary" type="button">Save review</button>
           </div>
-          <p role="status" style={{ marginTop: "var(--space-3)" }}>Review not yet submitted.</p>
+          <p data-review-status role="status" style={{ marginTop: "var(--space-3)" }}>{reviewMessage}</p>
         </section>
       </main>
     </AdminLayout>
@@ -500,6 +521,19 @@ export function TranslationsPage({ currentPath }) {
 }
 
 export function CertificatesPage({ currentPath }) {
+  const [query, setQuery] = useState("");
+  const [status, setStatus] = useState("");
+  const rows = [
+    { id: "EDT-DEMO-001", learner: "Demo learner", organisation: "Demo Learning Organisation", course: "Computer Basics", issueDate: "14 Nov 2026", status: "Verified" },
+    { id: "EDT-DEMO-002", learner: "Demo learner B.", organisation: "Sample Community School", course: "Digital Foundations", issueDate: "12 Nov 2026", status: "Pending" },
+  ];
+  const visibleRows = rows.filter((row) =>
+    `${row.id} ${row.learner} ${row.organisation} ${row.course}`
+      .toLowerCase()
+      .includes(query.trim().toLowerCase()) &&
+    (!status || row.status === status),
+  );
+
   return (
     <AdminLayout currentPath={currentPath}>
       <main className="page-main">
@@ -514,8 +548,8 @@ export function CertificatesPage({ currentPath }) {
         </div>
 
         <div className="filter-row">
-          <input className="search-control" type="search" placeholder="Search certificate ID or learner" aria-label="Search certificates" />
-          <select className="select-control" aria-label="Certificate status">
+          <input className="search-control" data-admin-search type="search" placeholder="Search certificate ID or learner" aria-label="Search certificates" value={query} onChange={(event) => setQuery(event.target.value)} />
+          <select className="select-control" data-certificate-status aria-label="Certificate status" value={status} onChange={(event) => setStatus(event.target.value)}>
             <option value="">All verification statuses</option>
             <option value="Verified">Verified</option>
             <option value="Pending">Pending</option>
@@ -536,24 +570,17 @@ export function CertificatesPage({ currentPath }) {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>EDT-DEMO-001</td>
-                <td>Demo learner</td>
-                <td>Demo Learning Organisation</td>
-                <td>Computer Basics</td>
-                <td>14 Nov 2026</td>
-                <td><span className="tag">Verified</span></td>
-                <td><button className="btn btn-secondary" type="button">View</button></td>
-              </tr>
-              <tr>
-                <td>EDT-DEMO-002</td>
-                <td>Demo learner B.</td>
-                <td>Sample Community School</td>
-                <td>Digital Foundations</td>
-                <td>12 Nov 2026</td>
-                <td><span className="tag">Pending</span></td>
-                <td><button className="btn btn-secondary" type="button">View</button></td>
-              </tr>
+              {visibleRows.map((row) => (
+                <tr key={row.id} data-admin-row data-status={row.status}>
+                  <td>{row.id}</td>
+                  <td>{row.learner}</td>
+                  <td>{row.organisation}</td>
+                  <td>{row.course}</td>
+                  <td>{row.issueDate}</td>
+                  <td><span className="tag">{row.status}</span></td>
+                  <td><button className="btn btn-secondary" type="button">View</button></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>

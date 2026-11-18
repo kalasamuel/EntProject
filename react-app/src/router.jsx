@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Phase2Preview, { getPageVariant } from "./Phase2Preview.jsx";
-import { LanguageProvider } from "./context/LanguageContext.jsx";
+import {
+  LanguageProvider,
+  LocalizedContent,
+  useLanguage,
+} from "./context/LanguageContext.jsx";
 import {
   AboutPage,
   ContactPage,
@@ -264,6 +268,7 @@ const migratedPages = {
 
 function FoundationPage() {
   const { pathname, hash } = useLocation();
+  const { t } = useLanguage();
   const variant = getPageVariant(pathname);
   const isLanding = pathname === "/" || pathname === "/index.html";
   const migratedPage = migratedPages[pathname];
@@ -271,12 +276,13 @@ function FoundationPage() {
   useEffect(() => {
     document.body.className =
       migratedPage?.bodyClass ?? (isLanding ? "landing-page" : variant.bodyClass);
-    document.title = isLanding
+    const title = isLanding
       ? "EdTech - Digital Skills in Local Languages"
       : migratedPage
         ? migratedPage.title
         : variant.title;
-  }, [isLanding, migratedPage, variant]);
+    document.title = t(title);
+  }, [isLanding, migratedPage, t, variant]);
 
   useEffect(() => {
     if (!hash) return;
@@ -287,13 +293,27 @@ function FoundationPage() {
     });
   }, [hash, pathname]);
 
-  if (isLanding) return <LandingPage />;
+  if (isLanding) {
+    return (
+      <LocalizedContent>
+        <LandingPage />
+      </LocalizedContent>
+    );
+  }
   if (migratedPage) {
     const Page = migratedPage.Page;
-    return <Page currentPath={pathname} />;
+    return (
+      <LocalizedContent>
+        <Page currentPath={pathname} />
+      </LocalizedContent>
+    );
   }
 
-  return <Phase2Preview currentPath={pathname} variant={variant} />;
+  return (
+    <LocalizedContent>
+      <Phase2Preview currentPath={pathname} variant={variant} />
+    </LocalizedContent>
+  );
 }
 
 export default function AppRouter() {

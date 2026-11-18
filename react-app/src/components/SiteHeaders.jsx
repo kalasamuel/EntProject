@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import LanguageToggle from "./LanguageToggle.jsx";
+import { LocalizedContent, useLanguage } from "../context/LanguageContext.jsx";
 
 const publicLinks = [
   ["Courses", "/pages/public/courses.html"],
@@ -60,6 +61,8 @@ function SiteNavigation({
   className = "",
   landing = false,
 }) {
+  const { t } = useLanguage();
+
   return (
     <nav
       className={`site-nav${className ? ` ${className}` : ""}`}
@@ -74,7 +77,7 @@ function SiteNavigation({
             to={href}
             aria-current={isCurrent ? "page" : undefined}
           >
-            {label}
+            {t(label)}
             {landing && label === "Courses" && (
               <i
                 className="fas fa-chevron-down nav-icon"
@@ -89,7 +92,11 @@ function SiteNavigation({
 }
 
 function HeaderActions({ children }) {
-  return <div className="header-actions">{children}</div>;
+  return (
+    <LocalizedContent>
+      <div className="header-actions">{children}</div>
+    </LocalizedContent>
+  );
 }
 
 export function LandingNavigation({ currentPath }) {
@@ -137,118 +144,132 @@ export function AdminNavigation({ currentPath }) {
 
 export function LandingHeader({ currentPath }) {
   return (
-    <header className="site-header landing-header">
-      <SiteLogo landing />
-      <LandingNavigation currentPath={currentPath} />
-      <HeaderActions>
-        <button
-          className="icon-btn"
-          type="button"
-          aria-label="Search courses"
-          data-search-toggle
-        >
-          <i className="fas fa-search" aria-hidden="true" />
-        </button>
-        <Link className="btn btn-secondary" to="/pages/auth/login.html">
-          Login
-        </Link>
-        <Link className="btn btn-primary" to="/pages/auth/register.html">
-          Join Us
-        </Link>
-      </HeaderActions>
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header landing-header">
+        <SiteLogo landing />
+        <LandingNavigation currentPath={currentPath} />
+        <HeaderActions>
+          <button
+            className="icon-btn"
+            type="button"
+            aria-label="Search courses"
+            data-search-toggle
+          >
+            <i className="fas fa-search" aria-hidden="true" />
+          </button>
+          <Link className="btn btn-secondary" to="/pages/auth/login.html">
+            Login
+          </Link>
+          <Link className="btn btn-primary" to="/pages/auth/register.html">
+            Join Us
+          </Link>
+        </HeaderActions>
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function PublicHeader({ currentPath }) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <PublicNavigation currentPath={currentPath} />
-      <HeaderActions>
-        <Link className="btn btn-secondary" to="/pages/auth/login.html">
-          Login
-        </Link>
-        <Link className="btn btn-primary" to="/pages/auth/register.html">
-          Join Us
-        </Link>
-      </HeaderActions>
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <PublicNavigation currentPath={currentPath} />
+        <HeaderActions>
+          <Link className="btn btn-secondary" to="/pages/auth/login.html">
+            Login
+          </Link>
+          <Link className="btn btn-primary" to="/pages/auth/register.html">
+            Join Us
+          </Link>
+        </HeaderActions>
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function AuthHeader({ backTo, backLabel } = {}) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <AuthNavigation backTo={backTo} backLabel={backLabel} />
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <AuthNavigation backTo={backTo} backLabel={backLabel} />
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function LearnerHeader({ currentPath }) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <LearnerNavigation currentPath={currentPath} />
-      <HeaderActions>
-        <Link
-          className="btn btn-secondary"
-          to="/pages/learner/profile.html"
-        >
-          Profile
-        </Link>
-      </HeaderActions>
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <LearnerNavigation currentPath={currentPath} />
+        <HeaderActions>
+          <Link
+            className="btn btn-secondary"
+            to="/pages/learner/profile.html"
+          >
+            Profile
+          </Link>
+        </HeaderActions>
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function InstructorHeader({ currentPath }) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <InstructorNavigation currentPath={currentPath} />
-      <HeaderActions>
-        <Link
-          className="btn btn-secondary"
-          to="/pages/learner/dashboard.html"
-        >
-          Learner view
-        </Link>
-      </HeaderActions>
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <InstructorNavigation currentPath={currentPath} />
+        <HeaderActions>
+          <Link
+            className="btn btn-secondary"
+            to="/pages/learner/dashboard.html"
+          >
+            Learner view
+          </Link>
+        </HeaderActions>
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function OrganisationHeader({ currentPath }) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <OrganisationNavigation currentPath={currentPath} />
-      <HeaderActions>
-        <Link
-          className="btn btn-secondary"
-          to="/pages/organisation/settings.html"
-        >
-          Settings
-        </Link>
-      </HeaderActions>
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <OrganisationNavigation currentPath={currentPath} />
+        <HeaderActions>
+          <Link
+            className="btn btn-secondary"
+            to="/pages/organisation/settings.html"
+          >
+            Settings
+          </Link>
+        </HeaderActions>
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }
 
 export function AdminHeader({ currentPath }) {
   return (
-    <header className="site-header">
-      <SiteLogo />
-      <AdminNavigation currentPath={currentPath} />
-      <LanguageToggle />
-    </header>
+    <LocalizedContent>
+      <header className="site-header">
+        <SiteLogo />
+        <AdminNavigation currentPath={currentPath} />
+        <LanguageToggle />
+      </header>
+    </LocalizedContent>
   );
 }

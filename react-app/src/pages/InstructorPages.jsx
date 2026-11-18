@@ -2,16 +2,19 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { InstructorHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import instructorStyles from "../styles/legacy/pages/instructor.css?inline";
 
 function InstructorLayout({ currentPath, children }) {
   return (
-    <>
-      <style>{instructorStyles}</style>
-      <PageFontLoader includeCaveat={false} />
-      <InstructorHeader currentPath={currentPath} />
-      {children}
-    </>
+    <LocalizedContent>
+      <>
+        <style>{instructorStyles}</style>
+        <PageFontLoader includeCaveat={false} />
+        <InstructorHeader currentPath={currentPath} />
+        {children}
+      </>
+    </LocalizedContent>
   );
 }
 

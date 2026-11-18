@@ -2,16 +2,19 @@ import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { OrganisationHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import organisationStyles from "../styles/legacy/pages/organisation.css?inline";
 
 function OrganisationLayout({ currentPath, children }) {
   return (
-    <>
-      <style>{organisationStyles}</style>
-      <PageFontLoader includeCaveat={false} />
-      <OrganisationHeader currentPath={currentPath} />
-      {children}
-    </>
+    <LocalizedContent>
+      <>
+        <style>{organisationStyles}</style>
+        <PageFontLoader includeCaveat={false} />
+        <OrganisationHeader currentPath={currentPath} />
+        {children}
+      </>
+    </LocalizedContent>
   );
 }
 

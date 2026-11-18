@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { AuthHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import authStyles from "../styles/legacy/pages/auth.css?inline";
 
 const dashboardRoutes = {
@@ -13,12 +14,14 @@ const dashboardRoutes = {
 
 function AuthLayout({ backTo = "/", backLabel = "Back to home", children }) {
   return (
-    <>
-      <style>{authStyles}</style>
-      <PageFontLoader includeCaveat />
-      <AuthHeader backTo={backTo} backLabel={backLabel} />
-      {children}
-    </>
+    <LocalizedContent>
+      <>
+        <style>{authStyles}</style>
+        <PageFontLoader includeCaveat />
+        <AuthHeader backTo={backTo} backLabel={backLabel} />
+        {children}
+      </>
+    </LocalizedContent>
   );
 }
 

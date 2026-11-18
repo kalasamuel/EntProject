@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { translateTree, translateText } from "../i18n/translations.js";
 
 const storageKey = "edtech-language";
 const LanguageContext = createContext(null);
@@ -36,6 +37,7 @@ export function LanguageProvider({ children }) {
   const value = useMemo(
     () => ({
       language,
+      t: language === "Luganda" ? translateText : (text) => text,
       toggleLanguage: () =>
         setLanguage((current) =>
           current === "English" ? "Luganda" : "English",
@@ -59,4 +61,9 @@ export function useLanguage() {
   }
 
   return context;
+}
+
+export function LocalizedContent({ children }) {
+  const { language } = useLanguage();
+  return <>{translateTree(children, language)}</>;
 }

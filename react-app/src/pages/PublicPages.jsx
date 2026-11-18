@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { LandingHeader, PublicHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import landingStyles from "../styles/legacy/pages/landing.css?inline";
 import publicStyles from "../styles/legacy/pages/public.css?inline";
 
@@ -221,38 +222,40 @@ function LandingVideoModal({ open, onClose, returnFocusRef }) {
   if (!open) return null;
 
   return (
-    <div
-      className="modal-backdrop"
-      data-video-modal
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="video-title"
-      onMouseDown={(event) => {
-        if (event.target === event.currentTarget) onClose();
-      }}
-    >
-      <div className="modal landing-modal">
-        <button
-          ref={closeRef}
-          className="modal-close icon-btn"
-          type="button"
-          data-video-close
-          aria-label="Close introduction"
-          onClick={onClose}
-        >
-          <i className="fas fa-times" aria-hidden="true" />
-        </button>
-        <span className="eyebrow">Welcome to EdTech</span>
-        <h2 id="video-title">Learning that speaks your language.</h2>
-        <p>
-          EdTech combines short lessons, practical activities and bilingual
-          support so learners can build everyday digital confidence.
-        </p>
-        <Link className="btn btn-primary" to="/pages/public/courses.html">
-          Explore courses
-        </Link>
+    <LocalizedContent>
+      <div
+        className="modal-backdrop"
+        data-video-modal
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="video-title"
+        onMouseDown={(event) => {
+          if (event.target === event.currentTarget) onClose();
+        }}
+      >
+        <div className="modal landing-modal">
+          <button
+            ref={closeRef}
+            className="modal-close icon-btn"
+            type="button"
+            data-video-close
+            aria-label="Close introduction"
+            onClick={onClose}
+          >
+            <i className="fas fa-times" aria-hidden="true" />
+          </button>
+          <span className="eyebrow">Welcome to EdTech</span>
+          <h2 id="video-title">Learning that speaks your language.</h2>
+          <p>
+            EdTech combines short lessons, practical activities and bilingual
+            support so learners can build everyday digital confidence.
+          </p>
+          <Link className="btn btn-primary" to="/pages/public/courses.html">
+            Explore courses
+          </Link>
+        </div>
       </div>
-    </div>
+    </LocalizedContent>
   );
 }
 
@@ -262,9 +265,10 @@ export function LandingPage() {
   const closeVideo = () => setVideoOpen(false);
 
   return (
-    <>
-      <style>{landingStyles}</style>
-      <PageFontLoader includeCaveat />
+    <LocalizedContent>
+      <>
+        <style>{landingStyles}</style>
+        <PageFontLoader includeCaveat />
       <div className="dot-floating dot-purple" aria-hidden="true" />
       <div className="dot-floating dot-yellow" aria-hidden="true" />
       <div className="dot-floating dot-cyan" aria-hidden="true" />
@@ -551,12 +555,13 @@ export function LandingPage() {
           </div>
         </div>
       </footer>
-      <LandingVideoModal
-        open={videoOpen}
-        onClose={closeVideo}
-        returnFocusRef={videoButtonRef}
-      />
-    </>
+        <LandingVideoModal
+          open={videoOpen}
+          onClose={closeVideo}
+          returnFocusRef={videoButtonRef}
+        />
+      </>
+    </LocalizedContent>
   );
 }
 
@@ -571,12 +576,14 @@ function SectionHeading({ eyebrow, children, id }) {
 
 function PublicLayout({ currentPath, children }) {
   return (
-    <>
-      <style>{publicStyles}</style>
-      <PageFontLoader includeCaveat />
-      <PublicHeader currentPath={currentPath} />
-      <main className="page-main">{children}</main>
-    </>
+    <LocalizedContent>
+      <>
+        <style>{publicStyles}</style>
+        <PageFontLoader includeCaveat />
+        <PublicHeader currentPath={currentPath} />
+        <main className="page-main">{children}</main>
+      </>
+    </LocalizedContent>
   );
 }
 

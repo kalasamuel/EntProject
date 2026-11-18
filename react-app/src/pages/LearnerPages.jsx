@@ -2,16 +2,19 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import PageFontLoader from "../components/PageFontLoader.jsx";
 import { LearnerHeader } from "../components/SiteHeaders.jsx";
+import { LocalizedContent } from "../context/LanguageContext.jsx";
 import learnerStyles from "../styles/legacy/pages/learner.css?inline";
 
 function LearnerLayout({ currentPath, children }) {
   return (
-    <>
-      <style>{learnerStyles}</style>
-      <PageFontLoader includeCaveat />
-      <LearnerHeader currentPath={currentPath} />
-      {children}
-    </>
+    <LocalizedContent>
+      <>
+        <style>{learnerStyles}</style>
+        <PageFontLoader includeCaveat />
+        <LearnerHeader currentPath={currentPath} />
+        {children}
+      </>
+    </LocalizedContent>
   );
 }
 

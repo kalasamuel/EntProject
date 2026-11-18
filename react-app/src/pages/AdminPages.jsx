@@ -10,7 +10,7 @@ function AdminLayout({ currentPath, children }) {
     <LocalizedContent>
       <>
         <style>{adminStyles}</style>
-        <PageFontLoader includeCaveat={false} />
+        <PageFontLoader includeCaveat />
         <AdminHeader currentPath={currentPath} />
         {children}
       </>
@@ -371,11 +371,11 @@ export function LessonEditorPage({ currentPath }) {
               </div>
               <div className="form-field">
                 <label className="form-label" htmlFor="lesson-objective">Learning objective</label>
-                <textarea className="form-control" id="lesson-objective">Identify what a computer is and describe one everyday use.</textarea>
+                <textarea className="form-control" id="lesson-objective" defaultValue="Identify what a computer is and describe one everyday use." />
               </div>
               <div className="form-field">
                 <label className="form-label" htmlFor="lesson-english">English content</label>
-                <textarea className="form-control" id="lesson-english">A computer is a tool that receives information, works with it and gives us a useful result.</textarea>
+                <textarea className="form-control" id="lesson-english" defaultValue="A computer is a tool that receives information, works with it and gives us a useful result." />
               </div>
               <div className="form-field">
                 <label className="form-label" htmlFor="lesson-luganda">Luganda content</label>
@@ -383,7 +383,7 @@ export function LessonEditorPage({ currentPath }) {
               </div>
               <div className="form-field">
                 <label className="form-label" htmlFor="lesson-exercise">Exercise</label>
-                <textarea className="form-control" id="lesson-exercise">Which part helps you type words?</textarea>
+                <textarea className="form-control" id="lesson-exercise" defaultValue="Which part helps you type words?" />
               </div>
               <div className="cluster">
                 <button className="btn btn-primary" type="button">Save draft</button>

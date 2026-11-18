@@ -43,18 +43,23 @@ test("all legacy paths render directly and survive refresh without page errors",
   page,
 }) => {
   const pageErrors = [];
+  const consoleErrors = [];
   page.on("pageerror", (error) => pageErrors.push(error.message));
+  page.on("console", (message) => {
+    if (message.type() === "error") consoleErrors.push(message.text());
+  });
 
   for (const route of routes) {
-    const response = await page.goto(route, { waitUntil: "domcontentloaded" });
+    const response = await page.goto(route, { waitUntil: "commit" });
     expect(response?.status(), route).toBe(200);
     await expect(page.locator("main").first(), route).toBeVisible();
     await expect(page.locator("h1").first(), route).toBeVisible();
     expect(await page.title(), route).not.toBe("");
 
-    await page.reload({ waitUntil: "domcontentloaded" });
+    await page.reload({ waitUntil: "commit" });
     await expect(page.locator("main").first(), `${route} after refresh`).toBeVisible();
   }
 
   expect(pageErrors).toEqual([]);
+  expect(consoleErrors).toEqual([]);
 });

@@ -65,10 +65,10 @@ function isPreserved(element, insideCourseCard) {
   );
 }
 
-function translateChildren(children, insideCourseCard) {
+function translateChildren(children, insideCourseCard, language) {
   return Children.map(children, (child) => {
     if (typeof child === "string") {
-      return translateText(child);
+      return language === "Luganda" ? translateText(child) : child;
     }
 
     if (!isValidElement(child)) {
@@ -86,7 +86,10 @@ function translateChildren(children, insideCourseCard) {
 
     for (const attribute of ["placeholder", "aria-label", "title", "alt"]) {
       if (typeof child.props[attribute] === "string") {
-        props[attribute] = translateText(child.props[attribute]);
+        props[attribute] =
+          language === "Luganda"
+            ? translateText(child.props[attribute])
+            : child.props[attribute];
       }
     }
 
@@ -94,16 +97,23 @@ function translateChildren(children, insideCourseCard) {
       for (const [name, value] of Object.entries(child.props)) {
         if (contentProps.has(name)) {
           props[name] =
-            typeof value === "string"
-              ? translateText(value)
-              : translateChildren(value, childInsideCourseCard);
+            language === "Luganda"
+              ? typeof value === "string"
+                ? translateText(value)
+                : translateChildren(value, childInsideCourseCard, language)
+              : value;
         } else if (name === "item" && value && typeof value === "object") {
-          props[name] = translateContentRecord(value);
+          props[name] =
+            language === "Luganda" ? translateContentRecord(value) : value;
         }
       }
     }
 
-    props.children = translateChildren(child.props.children, childInsideCourseCard);
+    props.children = translateChildren(
+      child.props.children,
+      childInsideCourseCard,
+      language,
+    );
     return cloneElement(child, props);
   });
 }
@@ -130,5 +140,5 @@ function translateContentRecord(value, key) {
 }
 
 export function translateTree(children, language) {
-  return language === "Luganda" ? translateChildren(children, false) : children;
+  return translateChildren(children, false, language);
 }

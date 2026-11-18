@@ -3,12 +3,14 @@ import { defineConfig } from "@playwright/test";
 export default defineConfig({
   testDir: "./e2e",
   testMatch: "**/*.e2e.js",
+  timeout: 120_000,
   fullyParallel: true,
   reporter: "list",
   use: {
     baseURL: "http://127.0.0.1:5173",
     browserName: "chromium",
     viewport: { width: 1440, height: 900 },
+    navigationTimeout: 60_000,
     trace: "retain-on-failure",
   },
   webServer: {

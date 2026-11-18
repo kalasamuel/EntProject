@@ -32,9 +32,10 @@ test("demo login routes by role and learner tabs and assessment feedback update"
   await expect(page.getByRole("heading", { name: /Good Morning/ })).toBeVisible();
 
   await page.goto("/pages/learner/my-learning.html");
-  await page.getByRole("tab", { name: "Completed" }).click();
+  await page.locator('[data-tab="completed"]').click();
   await expect(page.locator('[data-tab-panel="completed"]')).toBeVisible();
   await page.getByRole("link", { name: "View achievement" }).click();
+  await page.getByRole("button", { name: "View certificate" }).click();
   await expect(page.locator("[data-certificate-modal]")).toBeVisible();
 
   await page.goto("/pages/learner/assessment.html");

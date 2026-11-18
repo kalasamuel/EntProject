@@ -599,7 +599,7 @@ export function SettingsPage({ currentPath }) {
             </div>
             <div className="form-field">
               <label className="form-label" htmlFor="org-setting-description">Description</label>
-              <textarea className="form-control" id="org-setting-description">A fictional organisation used for the EdTech prototype.</textarea>
+              <textarea className="form-control" id="org-setting-description" defaultValue="A fictional organisation used for the EdTech prototype." />
             </div>
             <div className="form-field">
               <label className="form-label" htmlFor="org-setting-contact">Contact person</label>

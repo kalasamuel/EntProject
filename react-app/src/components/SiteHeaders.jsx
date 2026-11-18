@@ -208,14 +208,16 @@ export function LearnerHeader({ currentPath }) {
       <header className="site-header">
         <SiteLogo />
         <LearnerNavigation currentPath={currentPath} />
-        <HeaderActions>
-          <Link
-            className="btn btn-secondary"
-            to="/pages/learner/profile.html"
-          >
-            Profile
-          </Link>
-        </HeaderActions>
+        {currentPath === "/pages/learner/dashboard.html" && (
+          <HeaderActions>
+            <Link
+              className="btn btn-secondary"
+              to="/pages/learner/profile.html"
+            >
+              Profile
+            </Link>
+          </HeaderActions>
+        )}
         <LanguageToggle />
       </header>
     </LocalizedContent>
@@ -228,14 +230,16 @@ export function InstructorHeader({ currentPath }) {
       <header className="site-header">
         <SiteLogo />
         <InstructorNavigation currentPath={currentPath} />
-        <HeaderActions>
-          <Link
-            className="btn btn-secondary"
-            to="/pages/learner/dashboard.html"
-          >
-            Learner view
-          </Link>
-        </HeaderActions>
+        {currentPath === "/pages/instructor/dashboard.html" && (
+          <HeaderActions>
+            <Link
+              className="btn btn-secondary"
+              to="/pages/learner/dashboard.html"
+            >
+              Learner view
+            </Link>
+          </HeaderActions>
+        )}
         <LanguageToggle />
       </header>
     </LocalizedContent>
@@ -248,14 +252,16 @@ export function OrganisationHeader({ currentPath }) {
       <header className="site-header">
         <SiteLogo />
         <OrganisationNavigation currentPath={currentPath} />
-        <HeaderActions>
-          <Link
-            className="btn btn-secondary"
-            to="/pages/organisation/settings.html"
-          >
-            Settings
-          </Link>
-        </HeaderActions>
+        {currentPath === "/pages/organisation/dashboard.html" && (
+          <HeaderActions>
+            <Link
+              className="btn btn-secondary"
+              to="/pages/organisation/settings.html"
+            >
+              Settings
+            </Link>
+          </HeaderActions>
+        )}
         <LanguageToggle />
       </header>
     </LocalizedContent>

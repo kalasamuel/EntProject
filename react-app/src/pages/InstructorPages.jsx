@@ -10,7 +10,9 @@ function InstructorLayout({ currentPath, children }) {
     <LocalizedContent>
       <>
         <style>{instructorStyles}</style>
-        <PageFontLoader includeCaveat={false} />
+        <PageFontLoader
+          includeCaveat={currentPath === "/pages/instructor/dashboard.html"}
+        />
         <InstructorHeader currentPath={currentPath} />
         {children}
       </>

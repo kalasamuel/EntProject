@@ -98,6 +98,7 @@ const benefits = [
     description: "Keep learner records and progress organised in one place.",
     icon: "fa-user-group",
     tone: "yellow",
+    cardTone: "yellow",
   },
   {
     title: "Instructor Tools",

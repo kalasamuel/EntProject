@@ -59,3 +59,30 @@ test("admin filters and review actions preserve unpublished translation status",
   await page.getByRole("button", { name: "Request changes" }).click();
   await expect(page.getByRole("status")).toContainText("translation remains unpublished");
 });
+
+test("instructor and organisation headers and programme colours match the source", async ({
+  page,
+}) => {
+  await page.goto("/pages/instructor/classes.html");
+  await expect(page.locator(".site-header")).not.toContainText("Learner view");
+  await page.goto("/pages/instructor/dashboard.html");
+  await expect(page.locator(".site-header")).toContainText("Learner view");
+
+  await page.goto("/pages/organisation/programmes.html");
+  await expect(page.locator(".site-header")).not.toContainText("Settings");
+  await expect(
+    page.locator("[data-programme-card]").filter({ hasText: "Computer Basics" }),
+  ).toHaveClass(/card-blue/);
+  await page.goto("/pages/organisation/dashboard.html");
+  await expect(page.locator(".site-header")).toContainText("Settings");
+
+  await page.goto("/pages/learner/my-learning.html");
+  await expect(page.locator(".site-header")).not.toContainText("Profile");
+  await page.goto("/pages/learner/dashboard.html");
+  await expect(page.locator(".site-header")).toContainText("Profile");
+
+  await page.goto("/pages/public/organisations.html");
+  await expect(
+    page.locator(".benefit-card").filter({ hasText: "Learner Management" }),
+  ).toHaveClass(/card-yellow/);
+});

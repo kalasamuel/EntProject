@@ -154,8 +154,8 @@ export function ProgrammesPage({ currentPath }) {
 
   const programmes = useMemo(
     () => [
-      { id: "digital-foundations", status: "active", title: "Digital Foundations", course: "Digital Foundations", target: "New digital learners · 42 learners", progress: 72, weeks: "10 weeks", action: "btn btn-primary" },
-      { id: "computer-basics", status: "active", title: "Computer Basics", course: "Computer Basics", target: "Community cohort · 31 learners", progress: 48, weeks: "8 weeks", action: "btn btn-primary" },
+      { id: "digital-foundations", status: "active", tone: "yellow", title: "Digital Foundations", course: "Digital Foundations", target: "New digital learners · 42 learners", progress: 72, weeks: "10 weeks", action: "btn btn-primary" },
+      { id: "computer-basics", status: "active", tone: "blue", title: "Computer Basics", course: "Computer Basics", target: "Community cohort · 31 learners", progress: 48, weeks: "8 weeks", action: "btn btn-primary" },
       { id: "digital-safety", status: "upcoming", title: "Digital Safety", course: "Digital Safety", target: "Returning learners · 13 learners", progress: 0, weeks: "6 weeks", action: "btn btn-secondary" },
     ],
     [],
@@ -211,7 +211,7 @@ export function ProgrammesPage({ currentPath }) {
           {visibleProgrammes.map((programme) => (
             <article
               key={programme.id}
-              className={`card programme-card ${programme.status === "active" ? "card-yellow" : programme.status === "upcoming" ? "" : "card-blue"}`}
+              className={`card programme-card${programme.tone ? ` card-${programme.tone}` : ""}`}
               data-programme-card
               data-status={programme.status}
             >

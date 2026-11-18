@@ -191,7 +191,7 @@ const migratedPages = {
   },
   "/pages/instructor/reports.html": {
     Page: ReportsPage,
-    title: "Instructor Reports - EdTech",
+    title: "Teaching Reports - EdTech",
     bodyClass: "instructor-page",
   },
   "/pages/organisation/dashboard.html": {
@@ -251,7 +251,7 @@ const migratedPages = {
   },
   "/pages/admin/lesson-editor.html": {
     Page: LessonEditorPage,
-    title: "Edit Lesson - EdTech",
+    title: "Lesson Editor - EdTech",
     bodyClass: "admin-page",
   },
   "/pages/admin/translations.html": {

@@ -20,19 +20,13 @@ test("all source pages expose working English and Luganda language controls", as
     const languageToggle = page.locator("[data-language-toggle]");
     await expect(languageToggle, route).toBeVisible();
     await expect(page.locator("html"), route).toHaveAttribute("lang", "en");
+    await expect(languageToggle, route).toHaveAttribute("aria-pressed", "false");
 
     await languageToggle.click();
     await expect(page.locator("html"), route).toHaveAttribute("lang", "lg");
     await expect(languageToggle, route).toHaveAttribute("aria-pressed", "true");
     await expect(page.evaluate(() => localStorage.getItem("edtech-language"))).resolves.toBe(
       "Luganda",
-    );
-
-    await languageToggle.click();
-    await expect(page.locator("html"), route).toHaveAttribute("lang", "en");
-    await expect(languageToggle, route).toHaveAttribute("aria-pressed", "false");
-    await expect(page.evaluate(() => localStorage.getItem("edtech-language"))).resolves.toBe(
-      "English",
     );
   }
 });

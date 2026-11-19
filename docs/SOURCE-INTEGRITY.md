@@ -11,13 +11,13 @@ and the preserved snapshot:
 | Set | Matching files | Mismatches |
 |---|---:|---:|
 | `backup/pre-react/` against manifest | 191 / 191 | 0 |
-| Current non-documentation source and assets against manifest | 185 / 185 | 0 |
+| Current non-documentation source and assets against manifest | 75 / 75 | 0 |
 
-The original HTML pages, CSS/JavaScript assets, reference-template files, and
-other non-documentation files match their pre-migration hashes. The root
-`README.md` and migration documents are intentionally edited project
-documentation and are not application-source changes. The per-file mismatch
-list in the manifest comparison is limited to documentation paths.
+The 75 non-documentation files include the original HTML pages, CSS/JavaScript
+assets, reference-template files, and root source files; all match their
+pre-migration hashes. The manifest also records documentation paths. The root
+`README.md` and migration registers are intentionally edited project
+documentation and are not application-source changes.
 
 The React application and migration tests live outside the original manifest
 scope. They do not overwrite or replace the preserved static application.

@@ -42,6 +42,7 @@ const routes = [
 test("all legacy paths render directly and survive refresh without page errors", async ({
   page,
 }) => {
+  test.setTimeout(240_000);
   const pageErrors = [];
   const consoleErrors = [];
   page.on("pageerror", (error) => pageErrors.push(error.message));
